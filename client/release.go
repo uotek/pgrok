@@ -1,9 +1,10 @@
+//go:build release
 // +build release
 
 package client
 
 var (
-	rootCrtPaths = []string{"assets/client/tls/pgrokroot.crt"}
+	rootCrtPaths = []string{absPath("assets/client/tls/pgrokroot.crt")}
 )
 
 func useInsecureSkipVerify() bool {
