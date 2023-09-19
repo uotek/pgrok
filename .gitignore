@@ -1,8 +1,6 @@
 *.swp
 bin/
 vendor/
-client/assets/
-server/assets/
 .idea
 /pgrok*
 /pgrokd*

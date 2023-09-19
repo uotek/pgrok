@@ -1,7 +1,7 @@
 package proto
 
 import (
-	"pgrok/conn"
+	"github.com/uotek/pgrok/conn"
 )
 
 type Protocol interface {

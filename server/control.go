@@ -2,11 +2,11 @@ package server
 
 import (
 	"fmt"
+	"github.com/uotek/pgrok/conn"
+	"github.com/uotek/pgrok/msg"
+	"github.com/uotek/pgrok/util"
+	"github.com/uotek/pgrok/version"
 	"io"
-	"pgrok/conn"
-	"pgrok/msg"
-	"pgrok/util"
-	"pgrok/version"
 	"runtime/debug"
 	"strings"
 	"time"

@@ -2,12 +2,12 @@ package client
 
 import (
 	"fmt"
-	"pgrok/client/mvc"
-	"pgrok/client/views/term"
-	"pgrok/client/views/web"
-	"pgrok/log"
-	"pgrok/proto"
-	"pgrok/util"
+	"github.com/uotek/pgrok/client/mvc"
+	"github.com/uotek/pgrok/client/views/term"
+	"github.com/uotek/pgrok/client/views/web"
+	"github.com/uotek/pgrok/log"
+	"github.com/uotek/pgrok/proto"
+	"github.com/uotek/pgrok/util"
 	"sync"
 )
 

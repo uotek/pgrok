@@ -3,13 +3,13 @@ package web
 
 import (
 	"github.com/gorilla/websocket"
+	"github.com/uotek/pgrok/client/assets"
+	"github.com/uotek/pgrok/client/mvc"
+	"github.com/uotek/pgrok/log"
+	"github.com/uotek/pgrok/proto"
+	"github.com/uotek/pgrok/util"
 	"net/http"
 	"path"
-	"pgrok/client/assets"
-	"pgrok/client/mvc"
-	"pgrok/log"
-	"pgrok/proto"
-	"pgrok/util"
 )
 
 type WebView struct {

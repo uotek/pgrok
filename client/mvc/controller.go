@@ -1,7 +1,7 @@
 package mvc
 
 import (
-	"pgrok/util"
+	"github.com/uotek/pgrok/util"
 )
 
 type Controller interface {

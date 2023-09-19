@@ -3,8 +3,8 @@ package client
 import (
 	"flag"
 	"fmt"
+	"github.com/uotek/pgrok/version"
 	"os"
-	"pgrok/version"
 )
 
 const usage1 string = `Usage: %s [OPTIONS] <local port or address>

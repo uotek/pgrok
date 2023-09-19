@@ -5,12 +5,12 @@ import (
 	"crypto/tls"
 	"encoding/base64"
 	"fmt"
+	"github.com/uotek/pgrok/log"
 	"io"
 	"math/rand"
 	"net"
 	"net/http"
 	"net/url"
-	"pgrok/log"
 	"sync"
 
 	vhost "github.com/inconshreveable/go-vhost"

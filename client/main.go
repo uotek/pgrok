@@ -2,11 +2,11 @@ package client
 
 import (
 	"fmt"
+	"github.com/uotek/pgrok/log"
+	"github.com/uotek/pgrok/util"
 	"math/rand"
 	"net/http"
 	"os"
-	"pgrok/log"
-	"pgrok/util"
 	"runtime"
 	"time"
 
@@ -15,7 +15,7 @@ import (
 	_ "net/http/pprof"
 )
 
-//debug memory profiler $ go tool pprof http://localhost:6060/debug/pprof/heap
+// debug memory profiler $ go tool pprof http://localhost:6060/debug/pprof/heap
 func pprof() {
 	go func() {
 		http.ListenAndServe("localhost:6060", nil)

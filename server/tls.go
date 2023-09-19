@@ -3,8 +3,8 @@ package server
 import (
 	"crypto/tls"
 	"crypto/x509"
+	"github.com/uotek/pgrok/server/assets"
 	"io/ioutil"
-	"pgrok/server/assets"
 )
 
 var cyphers = []uint16{

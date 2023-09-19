@@ -2,12 +2,12 @@ package server
 
 import (
 	"crypto/tls"
+	"github.com/uotek/pgrok/conn"
+	log "github.com/uotek/pgrok/log"
+	"github.com/uotek/pgrok/msg"
+	"github.com/uotek/pgrok/util"
 	"math/rand"
 	"os"
-	"pgrok/conn"
-	log "pgrok/log"
-	"pgrok/msg"
-	"pgrok/util"
 	"runtime/debug"
 	"time"
 )

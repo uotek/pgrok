@@ -3,6 +3,7 @@ package client
 import (
 	"fmt"
 	"github.com/phayes/freeport"
+	"github.com/uotek/pgrok/log"
 	"gopkg.in/yaml.v1"
 	"io/ioutil"
 	"net"
@@ -10,7 +11,6 @@ import (
 	"os"
 	"os/user"
 	"path"
-	"pgrok/log"
 	"regexp"
 	"strconv"
 	"strings"

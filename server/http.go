@@ -5,8 +5,8 @@ import (
 	"fmt"
 	vhost "github.com/inconshreveable/go-vhost"
 	//"net"
-	"pgrok/conn"
-	"pgrok/log"
+	"github.com/uotek/pgrok/conn"
+	"github.com/uotek/pgrok/log"
 	"strings"
 	"time"
 )

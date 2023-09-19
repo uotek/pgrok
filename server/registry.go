@@ -3,9 +3,9 @@ package server
 import (
 	"encoding/gob"
 	"fmt"
+	"github.com/uotek/pgrok/cache"
+	"github.com/uotek/pgrok/log"
 	"net"
-	"pgrok/cache"
-	"pgrok/log"
 	"sync"
 	"time"
 )

@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"pgrok/conn"
+	"github.com/uotek/pgrok/conn"
 )
 
 func readMsgShared(c conn.Conn) (buffer []byte, err error) {

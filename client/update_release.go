@@ -1,11 +1,12 @@
+//go:build release || autoupdate
 // +build release autoupdate
 
 package client
 
 import (
-	"pgrok/client/mvc"
-	"pgrok/log"
-	"pgrok/version"
+	"github.com/uotek/pgrok/client/mvc"
+	"github.com/uotek/pgrok/log"
+	"github.com/uotek/pgrok/version"
 	"time"
 
 	"gopkg.in/inconshreveable/go-update.v0"

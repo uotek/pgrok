@@ -1,7 +1,7 @@
 package main
 
 import (
-	"pgrok/server"
+	"github.com/uotek/pgrok/server"
 )
 
 func main() {

@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 	gometrics "github.com/rcrowley/go-metrics"
+	"github.com/uotek/pgrok/conn"
+	"github.com/uotek/pgrok/log"
 	"io/ioutil"
 	"net/http"
 	"os"
-	"pgrok/conn"
-	"pgrok/log"
 	"time"
 )
 

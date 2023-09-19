@@ -5,14 +5,14 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
+	"github.com/uotek/pgrok/conn"
+	"github.com/uotek/pgrok/util"
 	"io"
 	"io/ioutil"
 	"net"
 	"net/http"
 	"net/http/httputil"
 	"net/url"
-	"pgrok/conn"
-	"pgrok/util"
 	"strings"
 	"sync"
 	"time"
@@ -111,7 +111,7 @@ func (h *Http) readRequests(tee *conn.Tee, lastTxn chan *HttpTxn, connCtx interf
 	}
 }
 
-//from httputil, here to use custom drainBody func
+// from httputil, here to use custom drainBody func
 func DumpRequest(req *http.Request, body bool) ([]byte, error) {
 	var err error
 	save := req.Body
@@ -186,7 +186,7 @@ func DumpRequest(req *http.Request, body bool) ([]byte, error) {
 	return b.Bytes(), nil
 }
 
-//from httputil, here to use custom drainBody func
+// from httputil, here to use custom drainBody func
 var errNoBody = errors.New("sentinel error value")
 var emptyBody = ioutil.NopCloser(strings.NewReader(""))
 
